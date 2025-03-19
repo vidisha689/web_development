@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Online Quiz Maker</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.quiz-container {
+  background-color: #ffffff;
+  width: 400px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-container button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.btn-container button:hover {
+  background-color: #45a049;
+}
+
+#next-btn {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+#next-btn:hover {
+  background-color: #007bb5;
+}
+#score-container {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+}
+
+  </style>
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Quiz</h1>
+    <div id="question-container">
+      <div id="question">Question text</div>
+      <div id="answer-buttons" class="btn-container"></div>
+      <div id="score-container">
+        Score: <span id="score">0</span>
+      </div>
+      <div id="result-container" class="hidden">
+        <h2>Quiz Completed!</h2>
+        <p>Your final score is: <span id="final-score">0</span></p>
+        <button id="restart-btn">Restart Quiz</button>
+      </div>
+    </div>
+    <button id="next-btn">Next</button>
+     </div>
+  <script src="quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>My Portfolio</title>
+    <style>
+/* General Styles */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f4f4f4;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 4px solid #c0392b;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* About Section */
+#about {
+    text-align: center;
+    padding: 3rem;
+}
+
+#about img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid #c0392b;
+}
+
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Skills Section */
+#skills {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-top: 2px solid #e0e0e0;
+}
+
+#skills h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #c0392b;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#skills li {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+/* Projects Section */
+#projects {
+    padding: 2rem;
+}
+
+#projects h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.project {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.project h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.project a {
+    color: #c0392b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Resume Section */
+#resume {
+    text-align: center;
+    padding: 2rem;
+}
+
+#resume a {
+    color: #ffffff;
+    background-color: #c0392b;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#resume a:hover {
+    background-color: #a93226;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+    color: #333333;
+    border-top: 2px solid #e0e0e0;
+}
+
+#contact h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+#contact p {
+    margin: 0.5rem 0;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    border-top: 4px solid #c0392b;
+}
+ </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Vidisha Ghosh</h1>
+        <p>Code with Passion.Design with Purpose.</p>
+<img src="C:\Users\VIDISHA GHOSH\OneDrive\Documents\Desktop\New folder (2)\WhatsApp Image 2025-03-19 at 14.41.39_4f5ce66b.jpg" alt="Your Photo"
+height="120px" width="120px" > 
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <p>Hello!, I'm Vidisha — a web developer skilled in HTML, CSS, and JavaScript. I create clean, responsive, 
+    and user-friendly websites. I enjoy turning ideas into simple and beautiful designs that work smoothly on all devices. 
+    My goal is to make websites that look good and feel easy to use.I focus on writing clean code and creating designs that are both
+    functional and visually appealing. I'm always learning and exploring new ways to improve my skils and deliver beeter rersults.
+
+    </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            
+        </ol>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2> My Projects</h2>
+        <div class="project">
+            <h3>Calculator</h3>
+            <p>A short description of the project tools used,and any notable feauters.</p>
+            <a href="C:\Users\VIDISHA GHOSH\OneDrive\Documents\Desktop\New folder (2)\calculator.html">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Job Board</h3>
+            <p> A short description of the project tools used,and any notable feauters.</p>
+            <a href="C:\Users\VIDISHA GHOSH\OneDrive\Documents\Desktop\New folder (2)\job board.html">View Project</a>
+        </div>
+        <div class="project">
+          <h3>Online Quiz Maker</h3>
+          <p>This is mainly a quiz protal based on general knowledge.</p>
+          <a href="C:\Users\VIDISHA GHOSH\OneDrive\Documents\Desktop\New folder (2)\quiz.html">View Project</a>
+        </div>
+<div class="project">
+          <h3>Project Management Tool</h3>
+          <p>A tool plan,track,and manage projects efficiently.</p>
+          <a href="project management.html">View Project</a>
+        </div>
+
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <a href="C:\Users\VIDISHA GHOSH\OneDrive\Documents\Desktop\New folder (2)\My cv vidisha ghosh.pdf" download>Download Resume</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me:</h2>
+        <p>Email Id: vidishaghosh815@gmail.com</p>
+        <p>Phone no:9748828120</p>
+        <p>Linkdln:https://www.linkedin.com/in/vidisha-ghosh-5a9989322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+
+  

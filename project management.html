@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Management Tool</title>
+  <link rel="stylesheet" href="project management.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Project Management Tool</h1>
+
+    <!-- Project Creation -->
+    <div class="form-container">
+      <h2>Create Project</h2>
+      <input type="text" id="project-name" placeholder="Enter project name" />
+      <textarea id="project-description" placeholder="Enter project description"></textarea>
+      <button onclick="createProject()">Create Project</button>
+    </div>
+
+    <!-- Project List -->
+    <div class="projects-list">
+      <h2>Projects</h2>
+      <ul id="projects-ul"></ul>
+    </div>
+  </div>
+
+  <script src="project management.js"></script>
+</body>
+</html>

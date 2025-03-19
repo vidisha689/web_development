@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Board</title>
+    <link rel="stylesheet" href="styles.css" /> 
+    <style>
+        /* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    padding: 1rem 5%;
+}
+
+nav .logo {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.login-btn, .post-btn {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.post-btn {
+    background-color: #ffc107;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 5%;
+    background-color: #f4f4f4;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+}
+
+.hero-content h2 {
+    font-size: 2rem;
+    color: #000;
+}
+
+.hero-content p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.upload-btn {
+    background-color: #28a745;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hero-image img {
+    width: 350px;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    background-color: #e9ecef;
+}
+
+.search-bar input, .search-bar select, .search-bar button {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.search-bar button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Categories Section */
+.categories {
+    padding: 2rem 5%;
+    background-color: #f9f9f9;
+}
+
+.categories h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.category {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    flex: 1;
+    min-width: 150px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.category:hover {
+    background-color: #0056b3;
+}
+    </style>
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <nav>
+        <div class="logo">Job Board</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Browse Jobs</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <button class="login-btn">Log In</button>
+            <button class="post-btn">Post a Job</button>
+        </div>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>5000+ Jobs Listed</h1>
+        <h2>Discover Your Next Career Move</h2>
+        <p>Join thousands of job seekers and find your perfect match today.</p>
+        <button class="upload-btn">Upload Your Resume</button>
+    </div>
+    <div class="hero-image">
+        <img src="D:\test\logo.jpg" alt="Job Search" />
+    </div>
+</section>
+
+<!-- Search Section -->
+<section class="search-bar">
+    <input type="text" id="keyword" placeholder="Job Title or Keyword" />
+    <input type="text" id="location" placeholder="Location" />
+    <select id="category">
+        <option value="">Category</option>
+        <option value="design">Design</option>
+        <option value="marketing">Marketing</option>
+        <option value="engineering">Engineering</option>
+    </select>
+    <button onclick="searchJobs()">Find Jobs</button>
+</section>
+
+<!-- Popular Categories -->
+<section class="categories">
+    <h2>Popular Categories</h2>
+    <div class="category-list">
+        <div class="category">Design & Creative <span>(80)</span></div>
+        <div class="category">Marketing <span>(60)</span></div>
+        <div class="category">Engineering <span>(40)</span></div>
+        <div class="category">Administration <span>(30)</span></div>
+        <div class="category">Telemarketing <span>(20)</span></div>
+        <div class="category">Education <span>(50)</span></div>
+    </div>
+</section>
+
+<script src="job.js"></script>
+</body>
+</html>
