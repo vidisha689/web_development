@@ -1,7 +1,3 @@
 # web_development
-landing page
-Protfolio
-Job Board
-Calculator
-Online quiz maker
-Project Management Tool
+check 
+Technologies used: HTML,CSS,JAVASCRIPT
